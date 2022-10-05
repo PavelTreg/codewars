@@ -1,0 +1,7 @@
+const defineCase = s => s === s.toUpperCase() ? 'U' : 'L';
+function sameCase(a, b){
+ if ((a === a.toUpperCase() && a === a.toLowerCase()) ||
+    (b === b.toUpperCase() && b === b.toLowerCase()))
+     return -1;
+  return defineCase(a) === defineCase(b) ? 1:0;
+}
